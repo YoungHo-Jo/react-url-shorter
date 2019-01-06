@@ -120,5 +120,5 @@
       "react-app"
     ]
   },
-  "proxy": "http://localhost"
+  "homepage": "."
 }

@@ -17,8 +17,12 @@ const statusCode = {
 }
 
 
-app.use(express.static(path.join(__dirname, '..', 'public/')))
+app.use(express.static(path.join(__dirname, '../', 'build/')))
 app.use(express.json()) // parsing body
+
+app.get('/', (req, res) => {
+  res.render('index.html')
+})
 
 
 app.post('/api/short', (req, res, next) => {
